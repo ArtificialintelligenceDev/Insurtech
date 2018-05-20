@@ -1,0 +1,75 @@
+<html>
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart InsuR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+    
+    <body>
+        
+      <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width = "30" height = "30">
+          <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+
+        </svg>
+      </a>
+    </span>
+         <!-- This is the navigation bar for the main links of the website-->
+      <ul class="navbar-nav">
+           <li><a href="#">Home</a></li>
+          <li><a href="file:///C:/Users/joe/Desktop/Hackathon2018/Benefits.HTML">Benefits</a></li>
+          <li><a href="file:///C:/Users/joe/Desktop/Hackathon2018/SHP_Flood/FloodPropensity2.html">CT flood risk</a></li>
+          <li><a href="#">CT Elevation data</a></li>
+          <li><a href="#">Texas flood risk</a></li>
+          <li><a href="#">Florida flood risk</a></li>
+          <li><a href="file:///C:/Users/joe/Desktop/Hackathon2018/TwitterAPI.html">Twitter API</a></li>
+          <li><a href="http://www.ct.gov/deep/cwp/view.asp?a=2698&q=322898&deepNav_GID=1707%20">Source files</a></li>
+         
+      </ul>
+  </nav>
+      
+         <!--This is the side navigation bar for the different calculator tabs-->
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>    <!-- &times; gives us the x mark on the slide menu -->
+        <a href="file:///C:/Users/joe/Desktop/Hackathon2018/DataVizFloodsFV3.22.2017.xlsx">Flood data set [United States]</a>
+        <a href="http://www.ct.gov/deep/cwp/view.asp?a=2698&q=322898&deepNav_GID=1707%20">Flood data set [CT]</a>
+        <a href="#">Flood data set [Texas]</a>
+        <a href="#">Flood data set [Florida]</a>
+       
+    
+    </div>
+    
+    <div id="main">
+        <h1>Smart InsuR: Flood risk insurance done the smart way.</h1>
+        <br>
+        <h3>Connecticut Flood Risk Assessment Tool</h3>
+    </div>
+        <p></p>
+    
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+        
+         function closeSlideMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    
+    </script>
+         <p><iframe width="900" height="400"src="file:///C:/Users/joe/Desktop/Hackathon2018/SHP_Flood/FloodPropensity2.html" frameborder="0"></iframe></p>
+        
+       
+        
+    </body>
+</html>
